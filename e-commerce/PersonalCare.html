@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Bazaar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      min-height: 100vh;
+      background: linear-gradient(45deg, hsl(304, 22%, 75%), #e4acf0);
+      display: flex;
+      /*background-size: cover;*/
+      justify-content: center;
+      align-items: center;
+      
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: white;
+	  display: flex;
+      justify-content: flex-end;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      z-index: 1000;
+    }
+      header a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+    
+    }
+    header img {
+    width: 30px; 
+    height: auto; 
+    max-width: 30%; 
+    margin-right: auto; 
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      margin-top: 5px
+    }
+    
+    .card {
+      width: 50px;
+      height: 50px;
+      background: #FAF3EB;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      margin: 20px;
+    }
+    
+    .card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .imgBx {
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .imgBx img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+    }
+    
+    .content {
+      padding: 20px;
+      text-align: center;
+      background-color: #FAF3EB;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    
+    .content h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .content p {
+      color: #666;
+    }
+      .card {
+        width: calc(15% - 0px);
+        height: auto;
+      }
+      footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+  
+}
+
+footer p {
+    margin: auto;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442489331_2765279446994443_3726936669151171368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGqGjaH_zuey6AMKuLro1u1WfUwSjYdGFdZ9TBKNh0YV0a5LZOx-tDYhL_uRNQGid0rZG5Srocax7p7QeAJ8aFj&_nc_ohc=mYnyCA1fqqkQ7kNvgGPFW4H&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDYf_9Lxb86N8hZxYAL28f26V_oKOg_F7AJ6cb6Eq3UJA&oe=6653B4B5" alt="Logo">
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <a href="Contact.html">Contacts</a>
+      <a href="AboutUs.html">About Us</a>
+    </nav>
+    </header>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441408057_2763731120482609_5866492374092093382_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF_EEF9oX5rDj60SKqFhisBH6Dt4aZTpkcfoO3hplOmR_IwaCbmMjUfggS4mpJimS8gUszbuw2ymOvrTdy8XZz3&_nc_ohc=GZzDtLsNfhEQ7kNvgFznUk2&_nc_ht=scontent-mnl1-2.xx&oh=00_AYAzCJBWPnYRtxBYqNZeJTHprBVMfDtpO9kE1zsBOMVXtA&oe=66574267" alt="PersonalCare">
+      </div>
+      <div class="content">
+        <h3>Method Pure Peace Body Wash</h3>
+        <p> ₱699.00</p>
+        <p><a href="PersonalCare.html">BUY NOW!</a></p>
+      </div>
+      
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441413727_2763731093815945_7013988706606265065_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFCQ64JhJQaYeuTfzSNy9DeplEatnCMvVamURq2cIy9VqNGanl4iWruKBtgn8Syn7uj0UaQJGvTe6_Py7bS9p0F&_nc_ohc=SgpLIOsu0NQQ7kNvgGGSXcZ&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCNmHUz_gHbAB3yJ2_rvsMwdhAbPw64aaOzN5voPffKag&oe=6657216E" alt="PersonalCare">
+      </div>
+      <div class="content">
+        <h3>GlutaMAX Lightening Soap with Glutathione</h3>
+        <p>₱185.00</p>
+        <p><a href="PersonalCare.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442480553_2763731050482616_2841296660568373565_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF7qgwYaa9pi9MqB3b8ko14h4fY8UFIhCuHh9jxQUiEKzenebHFog5y5VJQKbHmX7hOkP7g_JXlGPAwBTBbhTKs&_nc_ohc=wgF6PbMIN2EQ7kNvgHmzbZw&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCkregERzEU7xtWR64mzWfvQNHlOLjpKKu_uWjD_6lB3g&oe=66570E30" alt="PersonalCare">
+      </div>
+      <div class="content">
+        <h3>Aromatica Serene Body Wash Lavender and Marjoram</h3>
+        <p>₱1,444.30</p>
+        <p><a href="PersonalCare.html">BUY NOW!</a></p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441548455_2763731023815952_7092501656441002100_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF1BHb4Idl6y1Atv71s8i285VKA4puhiS_lUoDim6GJL1iyX3s1NEB-n-6jR3AvWVjTIQF0hggzu4NG9VITE-5v&_nc_ohc=dJemFo7m6bcQ7kNvgH8S6kn&_nc_ht=scontent-mnl1-2.xx&oh=00_AYB0Ofr-zSfblNUxFi-i6y99w3xOWNUNkeeWsZJrbsbtaQ&oe=665733CE" alt="PersonalCare">
+      </div>
+      <div class="content">
+        <h3>Fizz and Bubble Bubbling Bath Bomb Fizzies</h3>
+        <p>₱498.00</p>
+        <p><a href="PersonalCare.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442418103_2763730990482622_4234526062735058661_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFmdrT7P3MBjL7updbxpFPj6SCcZKvpa6rpIJxkq-lrqmQQIJjvSV14nUyCUqGMZP9OMf3FabB9gTdG37dA2m7e&_nc_ohc=OShUvOUnfKMQ7kNvgH5odwS&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBkr2jD8xQWlQDkL64or4-lnOIqtt7nE7t1MAtZtO_dzw&oe=665728B5" alt="PersonalCare">
+      </div>
+      <div class="content">
+        <h3>GLO 21 Silk Protein Face Bar</h3>
+        <p>₱49.00</p>
+        <p><a href="PersonalCare.html">BUY NOW!</a></p>
+      </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Beauty Bazaar. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Portfolio.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+
+</html>

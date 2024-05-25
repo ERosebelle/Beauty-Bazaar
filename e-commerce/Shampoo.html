@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Bazaar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      min-height: 100vh;
+      background: linear-gradient(45deg, hsl(241, 65%, 75%), #4c45b3);
+      display: flex;
+      /*background-size: cover;*/
+      justify-content: center;
+      align-items: center;
+      
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: white;
+	  display: flex;
+      justify-content: flex-end;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      z-index: 1000;
+    }
+      header a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+    
+    }
+    header img {
+    width: 30px; 
+    height: auto; 
+    max-width: 30%; 
+    margin-right: auto; 
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      margin-top: 5px
+    }
+    
+    .card {
+      width: 50px;
+      height: 50px;
+      background: #FAF3EB;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      margin: 20px;
+    }
+    
+    .card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .imgBx {
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .imgBx img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+    }
+    
+    .content {
+      padding: 20px;
+      text-align: center;
+      background-color: #FAF3EB;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    
+    .content h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .content p {
+      color: #666;
+    }
+      .card {
+        width: calc(15% - 0px);
+        height: auto;
+        margin-top: 3%;
+        margin-bottom: 5%;
+
+      }
+      footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+  
+}
+
+footer p {
+    margin: auto;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442489331_2765279446994443_3726936669151171368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGqGjaH_zuey6AMKuLro1u1WfUwSjYdGFdZ9TBKNh0YV0a5LZOx-tDYhL_uRNQGid0rZG5Srocax7p7QeAJ8aFj&_nc_ohc=mYnyCA1fqqkQ7kNvgGPFW4H&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDYf_9Lxb86N8hZxYAL28f26V_oKOg_F7AJ6cb6Eq3UJA&oe=6653B4B5" alt="Logo">
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <a href="Contact.html">Contacts</a>
+      <a href="AboutUs.html">About Us</a>
+    </nav>
+    </header>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441486851_2763731297149258_3361660289880832775_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFq7huppI3oYecWr3Chuw7EXLKS99K5nJdcspL30rmcl1ke-77q3ggyQwpsZ4qqzhIVE918JivwMfYmXD3vY-VI&_nc_ohc=IH7si1f191MQ7kNvgHqZVLa&_nc_ht=scontent-mnl1-2.xx&oh=00_AYAbz6eBOWXZj3B85ETpn9-hEGv0rPcTOb_r-Gsc0PUO6w&oe=66572544" alt="Shampoo">
+      </div>
+      <div class="content">
+        <h3>Schwarzkopf Extra Care Hair Repair Hydro Collagen Shampoo</h3>
+        <p>₱429.00</p>
+        <p><a href="Shampoo.html">BUY NOW!</a></p>
+      </div>
+      
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/436199675_2763731253815929_1946028245935338026_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFW_4LNqY7sulY1QYmuflRGPWF2EwC-Rhw9YXYTAL5GHH3sScF1g-EY5u4Y6JY_4kExEXQ6t5qhFtGRDbmqTNyV&_nc_ohc=MYdJJjV-XosQ7kNvgFlGsx2&_nc_ht=scontent-mnl1-2.xx&oh=00_AYACxU8myidbGD7giYGXWRWsQZsDObTAT-4vVfFsLj8txg&oe=66571689" alt="Shampoo">
+      </div>
+      <div class="content">
+        <h3>Schwarzkopf Fibre Clinix Tame Shampoo</h3>
+        <p>₱1,204.25</p>
+        <p><a href="Shampoo.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441546873_2763731227149265_8743680128077887290_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGqm7xeWl7HmIeFK9b7bqLrzp_Z9Py-XnnOn9n0_L5eeUzdGcjt2SIfYhDkJpsDbrGPZjKpYsEoaLsbMUPIKMqa&_nc_ohc=bN4ma4Xr4usQ7kNvgFpsJEE&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCXpDVcps-0zViH7aFdk5dV1Pew-fP9CCB0XqR-ymbzYw&oe=665733F3" alt="Shampoo">
+      </div>
+      <div class="content">
+        <h3>Schwarzkopf Gliss Ultimate Repair Conditioner</h3>
+        <p>₱192.07</p>
+        <p><a href="Shampoo.html">BUY NOW!</a></p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441693835_2763731197149268_8751048907813891337_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHp_YJ9cZc3Zf0uX1stK1SGbyxJQD1xS69vLElAPXFLr1njkrnr8Nda4Ff0mH1zL0JS5U5jEhbWGh5pCSOsLyYm&_nc_ohc=ttw2nNmuowcQ7kNvgHGwsrT&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBTNunwMKXM4J_xEDuTC7M1c5urhob0UvLtl2KG_BNiDw&oe=66573011" alt="Shampoo">
+      </div>
+      <div class="content">
+        <h3>Schwarzkopf Extra Care Total Repair Shampoo</h3>
+        <p>₱346.90</p>
+        <p><a href="Shampoo.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/435925042_2763731157149272_8568285079513926724_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG_GGZeIjilYGwvDwniOSd8n6Z5fNJ-r3Gfpnl80n6vcW4aGFOyp4GA3QJRhJue3SIUVVx9tUgSmnIvgPjG9H0-&_nc_ohc=FAuJNnVLU-YQ7kNvgGza1Ej&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBy2ZIi43QWtQqHOH4-ClyA2r9kZo-JX28ywl1eMFHofA&oe=6657217C" alt="Shampoo">
+      </div>
+      <div class="content">
+        <h3>Schwarzkopf Colour Conditioner</h3>
+        <p>₱1,160.02</p>
+        <p><a href="Shampoo.html">BUY NOW!</a></p>
+      </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Beauty Bazaar. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Portfolio.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+
+</html>

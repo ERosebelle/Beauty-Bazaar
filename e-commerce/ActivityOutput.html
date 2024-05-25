@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Activity Outputs</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      min-height: 100vh;
+      background: linear-gradient(45deg, #ffffff, #f8f3ed);
+      display: flex;
+      /*background-size: cover;*/
+      justify-content: center;
+      align-items: center;
+      
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: white;
+	  display: flex;
+      justify-content: flex-end;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      z-index: 1000;
+      
+    }
+      header a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+      
+    
+    }
+    header img {
+    width: 30px; 
+    height: auto; 
+    max-width: 30%; 
+    margin-right: auto; 
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      margin-top: 5px
+    }
+    
+    .card {
+      width: 50px;
+      height: 50px;
+      background: #e9d1b7;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      margin: 20px;
+    }
+    
+    .imgBx {
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .imgBx img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+    }
+    
+    .content {
+      padding: 20px;
+      text-align: center;
+      background-color: #b99d7d;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    
+    .content h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .content p {
+      color: #ffffff;
+    }
+      .card {
+        width: calc(15% - 0px);
+        height: auto;
+    
+      }
+      footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    height: 11%;
+  
+}
+
+footer p {
+    margin: auto;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442489331_2765279446994443_3726936669151171368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGqGjaH_zuey6AMKuLro1u1WfUwSjYdGFdZ9TBKNh0YV0a5LZOx-tDYhL_uRNQGid0rZG5Srocax7p7QeAJ8aFj&_nc_ohc=mYnyCA1fqqkQ7kNvgGPFW4H&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDYf_9Lxb86N8hZxYAL28f26V_oKOg_F7AJ6cb6Eq3UJA&oe=6653B4B5" alt="Logo">
+    <nav>
+      <a href="Portfolio.html">Home</a>
+      <a href="HomePage.html">Store</a>
+      <a href="Contact.html">Contacts</a>
+      <a href="AboutUs.html">About Us</a>
+    </nav>
+    </header>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441533625_2763731930482528_2947585475849761315_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFvmlUenrCEM5xR9Bz8w40F_wnKVf6zopr_CcpV_rOimruKhPYoQCrUDNapCSCiy0BYl4SiQHHZ92Bch2zSOIHU&_nc_ohc=rovnpqCiG1UQ7kNvgHMwpmp&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBp4Ow9UeU9EXDP5CcYzrzqAq1cfR05s_gwTkCpoJEfIw&oe=6653D558" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Prelims</h3>
+        <p>Activity 1</p>
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/436232975_2763731900482531_6753072465653946924_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGTKwvZS0aTDpdHCeIwXGXWjlZ62o_S-j-OVnraj9L6P6VOySdD00IffrlwsjRczxw3-zhvzgjIs_IU2tkocHRm&_nc_ohc=1JcXjiJQNT0Q7kNvgHM45pW&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCyBkRJFcWrAwFP_uY0vhVL90BxDeOn4JLRpXEd1FeChw&oe=665405F1" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Prelims</h3>
+        <p>Activity 2</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441570785_2763731857149202_5944953893905649995_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFopK61TSDuRFDUpaNs6t6qth5Yi0U6mS22HliLRTqZLXg-_IKuJw5l5QxbryGpsLrkKI5r2qrL5akvFOtU7djn&_nc_ohc=Z9F351am-vgQ7kNvgFQC4r5&_nc_oc=Adg5L2CyGzs7Le6VBJcUK0ur1zkTjgkwBkKRUuLLPWVM5UHYxb89yZd5JjT5N82CDBI&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDJ0Psk0AGvKw5-bfvAuh2B04YONc1dfk7mfVsgWTJuqA&oe=6653E6C1" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Prelims</h3>
+        <p>Activity 3</p>
+      </div>
+    </div>
+
+      
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442502534_2763731803815874_6834769667037917147_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGksRp_cVYZBIjrDH2KhrM4Kx48Fi1rtYArHjwWLWu1gGLZQRYWvylpbWIBpobBP5Hf6hFmh8rI_R971Gr82olm&_nc_ohc=7sDCtYiS1zwQ7kNvgHyTNWA&_nc_oc=AdhThHvYmQGELMOQeNZtwHalCw3coT4UxeIgHdyl--nbsY2PT8U9fCiywToBPIVgSlo&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDIrQm-sPqxkrwAiqhXKgOFBdKUY3Jp0EEGsSTjMAJNEg&oe=6653EBBD" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Prelims</h3>
+        <p>Activity 4</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441207966_2763731770482544_6999019809844693063_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFMYD7km3IbtN1PhtjdgWtQVy9hTWc0tWlXL2FNZzS1adYbxAXIVhO6UWm7JPZjNUnudaCvk5hm5sKGH1GrigXJ&_nc_ohc=bsFEjitrhgQQ7kNvgHrSOMS&_nc_ht=scontent-mnl1-2.xx&oh=00_AYD0r1A1DwF0R9rKquwiTDopdKXsiAHfL39TVv-Tl5hSEA&oe=665402AD" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Prelims</h3>
+        <p>Activity 5</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/436301700_2763731723815882_6654874735063608852_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF0BulP22xLRo2Gr6hjqwYDygMCqTOWc9LKAwKpM5Zz0p6yab-exIdouU5fKK0eZuUTPgJEYQlT55z72mDBrBRv&_nc_ohc=YajuMqpHO8IQ7kNvgE40XFa&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCCBa1CwCtOMKkmAfS7Zoc29AMKoZYNTK-o5uSexENexA&oe=6653E2BC" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Prelims</h3>
+        <p>Activity 6</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441496796_2767202480135473_6739363352628694355_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFkNu_tsm9xSdFmXj5UVNsOZbG8iWws9ERlsbyJbCz0RDtODF38xpX9clsd-hnr3W84sOS1xLkfTfMoFl1ltC7h&_nc_ohc=sHHPODsX0sUQ7kNvgEZPBPr&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDhc6ZCj-jWbbI7f3CijXDWbK7Zyx7IAtYZVDqTmJDUVA&oe=66574DB6" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Midterms</h3>
+        <p>Activity 1</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441622422_2767201543468900_1411572415585420394_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGeKv4Rzfl0-g00NZRGRCdavAuMcgAq7sS8C4xyACruxOUaE4A3WcYoTh39f1Ab6AfWgGKu495ypeOpYZgEbELq&_nc_ohc=xP39syvGIWAQ7kNvgEkRoZY&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCDAh6AQgaBfPgnFKjgJLmlYKpsZOZASf6VqDG_HvEyrQ&oe=66575596" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Midterms</h3>
+        <p>Activity 2</p>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441499272_2767203183468736_9157370687293713271_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFwJtp9dHBIYvGO0orSH9kDWcO8qJEK8f5Zw7yokQrx_kvtL3W26LtrcTajEabc2qVr_7pUQhH-IbBR24T1ygVV&_nc_ohc=fo3KWdFSbIUQ7kNvgEt4Ph_&_nc_ht=scontent-mnl1-2.xx&oh=00_AYASHJI-TdrMY4HxYQV8J-AtBKgoAsCPwy8BVre29DrUhw&oe=66574F9F" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Midterms</h3>
+        <p>Practice 1-3</p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/444957693_2767201306802257_3207618209682038144_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHNDda-UsF8u1kunEkmMJsIjKENT5BNkZ-MoQ1PkE2Rn9HWKure5FLjf_qPI2cZrVbXHahdSe5n-Pbps3SO7Sg_&_nc_ohc=xLgqzCeb2loQ7kNvgHhuWan&_nc_ht=scontent-mnl1-2.xx&oh=00_AYC1XGBnhhVpV3k6MCkf2kfz9FL7MSRa5CoHCuTAtg6D6A&oe=66577441" alt="ACTIVITIES">
+      </div>
+      <div class="content">
+        <h3>Midterms</h3>
+        <p>Activity 3</p>
+      </div>
+  </div>
+
+  <div class="card">
+    <div class="imgBx">
+      <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/444481310_2767205053468549_428297414039170479_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFHpP-GOh6_BbfUevMm4o0f0OesyauYgrbQ56zJq5iCtqNl5ZMVKJqCcOckY3MsdVeAdc-Oo2WlJxwRltXr6Qvh&_nc_ohc=Y0v-LmnrNHAQ7kNvgGjuJHH&_nc_ht=scontent-mnl1-2.xx&oh=00_AYC6uoA6f1ZXbAj_sPwGbtOUyABKXunoc5azp0TYfNkr0g&oe=66577FA7" alt="ACTIVITIES">
+    </div>
+    <div class="content">
+      <h3>Midterms</h3>
+      <p>Recitation 1&2</p>
+    </div>
+
+</div>
+  <div class="card">
+    <div class="imgBx">
+      <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/444444810_2767206083468446_2000557851927764591_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHYXw6CC5V6H0DjhtMU6uNqRRewd43SVZRFF7B3jdJVlP7Xw8xZlvP1p4ZbDuzvZfgAK1ibXLlgkptU3Xsp5ZSE&_nc_ohc=r5Cfr0lmiBcQ7kNvgEUAmD1&_nc_ht=scontent-mnl1-2.xx&oh=00_AYA9FPBArBDmzQjxlKp3kbooVmZ3NsI1wyaaiQ30fjTB8Q&oe=665772A7" alt="ACTIVITIES">
+    </div>
+    <div class="content">
+      <h3>Finals</h3>
+      <p>E-commerce</p>
+    </div>
+</div>
+  <footer>
+    <p>&copy; 2024 Rose's Portfolio. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Portfolio.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+
+</html>

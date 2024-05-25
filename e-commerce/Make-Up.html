@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Bazaar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      min-height: 100vh;
+      background: linear-gradient(45deg, hsl(0, 43%, 63%), #6b1818);
+      display: flex;
+      /*background-size: cover;*/
+      justify-content: center;
+      align-items: center;
+      
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: white;
+	  display: flex;
+      justify-content: flex-end;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      z-index: 1000;
+    }
+      header a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+    
+    }
+    header img {
+    width: 30px; 
+    height: auto; 
+    max-width: 30%; 
+    margin-right: auto; 
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      margin-top: 5px
+    }
+    
+    .card {
+      width: 50px;
+      height: 50px;
+      background: #FAF3EB;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      margin: 20px;
+    }
+    
+    .card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .imgBx {
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .imgBx img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+    }
+    
+    .content {
+      padding: 20px;
+      text-align: center;
+      background-color: #FAF3EB;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    
+    .content h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .content p {
+      color: #666;
+    }
+      .card {
+        width: calc(15% - 0px);
+        height: auto;
+      }
+      footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+    height: 11%;
+  
+}
+
+footer p {
+    margin: auto;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442489331_2765279446994443_3726936669151171368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGqGjaH_zuey6AMKuLro1u1WfUwSjYdGFdZ9TBKNh0YV0a5LZOx-tDYhL_uRNQGid0rZG5Srocax7p7QeAJ8aFj&_nc_ohc=mYnyCA1fqqkQ7kNvgGPFW4H&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDYf_9Lxb86N8hZxYAL28f26V_oKOg_F7AJ6cb6Eq3UJA&oe=6653B4B5" alt="Logo">
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <a href="Contact.html">Contacts</a>
+      <a href="AboutUs.html">About Us</a>
+    </nav>
+    </header>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441533625_2763731930482528_2947585475849761315_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFvmlUenrCEM5xR9Bz8w40F_wnKVf6zopr_CcpV_rOimruKhPYoQCrUDNapCSCiy0BYl4SiQHHZ92Bch2zSOIHU&_nc_ohc=rovnpqCiG1UQ7kNvgHMwpmp&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBp4Ow9UeU9EXDP5CcYzrzqAq1cfR05s_gwTkCpoJEfIw&oe=6653D558" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Moisturazer</h3>
+        <p>₱806.00</p>
+        <p><a href="Make-up.html">BUY NOW!</a></p>
+      </div>
+      
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/436232975_2763731900482531_6753072465653946924_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGTKwvZS0aTDpdHCeIwXGXWjlZ62o_S-j-OVnraj9L6P6VOySdD00IffrlwsjRczxw3-zhvzgjIs_IU2tkocHRm&_nc_ohc=1JcXjiJQNT0Q7kNvgHM45pW&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCyBkRJFcWrAwFP_uY0vhVL90BxDeOn4JLRpXEd1FeChw&oe=665405F1" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Primer</h3>
+        <p>₱215.00</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441570785_2763731857149202_5944953893905649995_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFopK61TSDuRFDUpaNs6t6qth5Yi0U6mS22HliLRTqZLXg-_IKuJw5l5QxbryGpsLrkKI5r2qrL5akvFOtU7djn&_nc_ohc=Z9F351am-vgQ7kNvgFQC4r5&_nc_oc=Adg5L2CyGzs7Le6VBJcUK0ur1zkTjgkwBkKRUuLLPWVM5UHYxb89yZd5JjT5N82CDBI&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDJ0Psk0AGvKw5-bfvAuh2B04YONc1dfk7mfVsgWTJuqA&oe=6653E6C1" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Foundation</h3>
+        <p>₱233.00</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+    </div>
+
+      
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442502534_2763731803815874_6834769667037917147_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGksRp_cVYZBIjrDH2KhrM4Kx48Fi1rtYArHjwWLWu1gGLZQRYWvylpbWIBpobBP5Hf6hFmh8rI_R971Gr82olm&_nc_ohc=7sDCtYiS1zwQ7kNvgHyTNWA&_nc_oc=AdhThHvYmQGELMOQeNZtwHalCw3coT4UxeIgHdyl--nbsY2PT8U9fCiywToBPIVgSlo&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDIrQm-sPqxkrwAiqhXKgOFBdKUY3Jp0EEGsSTjMAJNEg&oe=6653EBBD" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Concealer</h3>
+        <p>₱124.00</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441207966_2763731770482544_6999019809844693063_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFMYD7km3IbtN1PhtjdgWtQVy9hTWc0tWlXL2FNZzS1adYbxAXIVhO6UWm7JPZjNUnudaCvk5hm5sKGH1GrigXJ&_nc_ohc=bsFEjitrhgQQ7kNvgHrSOMS&_nc_ht=scontent-mnl1-2.xx&oh=00_AYD0r1A1DwF0R9rKquwiTDopdKXsiAHfL39TVv-Tl5hSEA&oe=665402AD" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Liquid Blush on</h3>
+        <p>₱248.00</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/436301700_2763731723815882_6654874735063608852_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF0BulP22xLRo2Gr6hjqwYDygMCqTOWc9LKAwKpM5Zz0p6yab-exIdouU5fKK0eZuUTPgJEYQlT55z72mDBrBRv&_nc_ohc=YajuMqpHO8IQ7kNvgE40XFa&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCCBa1CwCtOMKkmAfS7Zoc29AMKoZYNTK-o5uSexENexA&oe=6653E2BC" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Loose Powder</h3>
+        <p>₱158.00</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441184149_2763731667149221_114725416375102958_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHIrsm8JKunU8G-UlT__lByUwQwWjYmpulTBDBaNiam6b3axizPF-4nVZvuexsnKmIYuySplY8mLDd6_BO9JYv-&_nc_ohc=qLOxlH-RBtIQ7kNvgFUuuWm&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDrPv1UuMX7hgAy3C5mEFmdu6udFG0nDv6ryHNMNMw-Vw&oe=6653F29E" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Eyeshadow</h3>
+        <p>₱1,200.00</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441499423_2763731637149224_8062283842428817768_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFhsx8PxgHsvoxoWQ0_Q-XnH5TZmzR4rvUflNmbNHiu9aXDxhHUPGlUvbtWUOn-bxiFDcAgMrAqndxJ4ZzCNK68&_nc_ohc=-JovaEEpWSEQ7kNvgEfJVsi&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBwlUoIjqieikTlggNvPfunFh0HXILuPBFWEzVzjUOScA&oe=6653F08B" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Eyeliner</h3>
+        <p>₱143.70</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441543416_2763731617149226_5376144460346971600_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGH5KtJh5nASfAlQ6FAtA9xro7SFLqK9sGujtIUuor2wbOZ-XGkyriPPELVCUBilz9ZDsXjKQTqH6sYcyYRBU68&_nc_ohc=axpFcJJrvSoQ7kNvgFHfx1E&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBGTvmAoghhfkOuB3nrkqIx5S6OKQzX1apZ-WGhXhDATQ&oe=6653F463" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Mascara</h3>
+        <p>₱380</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/444137764_2763732273815827_2608214213169864890_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGWT03idE2gB471iqEMTtUZMXUbn1qZ4FsxdRufWpngW6kCNoBvJVprDJ9gedtD3nO094jflsThe30ULZqh9rac&_nc_ohc=lom9YMdKaB0Q7kNvgF4lSxx&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBNvqyCppQTGDuSAbI-neyT3QZQAv06YWh_gy8uPM6L4w&oe=665407EE" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>O.TWO.O Matte</h3>
+        <p>₱392.30</p>
+        <p><a href="Make-Up.html">BUY NOW!</a></p>
+      </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Beauty Bazaar. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Portfolio.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Bazaar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      min-height: 100vh;
+      background: linear-gradient(45deg, #86bb98, #FFF8EE);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: white;
+	  display: flex;
+      justify-content: flex-end;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      z-index: 1000;
+    }
+      header a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+    
+    }
+    header img {
+    width: 30px; 
+    height: auto; 
+    max-width: 30%; 
+    margin-right: auto; 
+    }
+    .contact-info {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .contact-info a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+            font-size: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+        .contact-info a:hover {
+            color: blue;
+        }
+        .contact-info a .icon {
+            margin-right: 10px;
+        }
+      footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+  
+}
+
+footer p {
+    margin: auto;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442489331_2765279446994443_3726936669151171368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGqGjaH_zuey6AMKuLro1u1WfUwSjYdGFdZ9TBKNh0YV0a5LZOx-tDYhL_uRNQGid0rZG5Srocax7p7QeAJ8aFj&_nc_ohc=mYnyCA1fqqkQ7kNvgGPFW4H&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDYf_9Lxb86N8hZxYAL28f26V_oKOg_F7AJ6cb6Eq3UJA&oe=6653B4B5" alt="Logo">
+    <nav>
+        <a href="HomePage.html">Home</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact.html">Contacts</a>
+        <a href="AboutUs.html">About Us</a>
+    </nav>
+    </header>
+    <main>
+        <section class="contact-info">
+            <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/436565440_2765350693653985_9145287548315593189_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHl5wVgRkQlhLEhjCV2C_Dkf4bcm_5QzpB_htyb_lDOkNYgpRKaCzUfAJnHDXUn9wMhS7akQc_FUqKvUMMEDckQ&_nc_ohc=i0I-wKjTgfAQ7kNvgGMpXe4&_nc_ht=scontent-mnl1-2.xx&oh=00_AYAenMFoNMccvnA9LTN_5S_UBcDGTZcJ7NU_zjAvlNoyew&oe=6653F888" alt="My Image" width="200">
+            <h2>Contact me here!</h2>
+            <a href="mailto:rosebelle.egagamao@gmail.com"><i class="fas fa-envelope icon"></i>Gmail</a>
+            <a href="https://www.facebook.com/rEgagamao/"><i class="fab fa-facebook icon"></i>Facebook</a>
+            <a href="https://www.instagram.com/gurliepopz?igsh=eXdtdWs0dmV3MWVo"><i class="fab fa-instagram icon"></i>Instagram</a>
+            
+        </section>
+    </main>
+  <footer>
+    <p>&copy; 2024 Beauty Bazaar. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Portfolio.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+
+</html>

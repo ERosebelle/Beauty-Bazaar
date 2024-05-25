@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Bazaar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      min-height: 100vh;
+      background: linear-gradient(45deg, hsl(76, 66%, 81%), #dbf384);
+      display: flex;
+      /*background-size: cover;*/
+      justify-content: center;
+      align-items: center;
+      
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: white;
+	  display: flex;
+      justify-content: flex-end;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      z-index: 1000;
+    }
+      header a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+    
+    }
+    header img {
+    width: 30px; 
+    height: auto; 
+    max-width: 30%; 
+    margin-right: auto; 
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      margin-top: 5px
+    }
+    
+    .card {
+      width: 50px;
+      height: 50px;
+      background: #FAF3EB;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      margin: 20px;
+    }
+    
+    .card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .imgBx {
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .imgBx img {
+      width: 100%;
+      height: 50%;
+      object-fit: cover;
+    }
+    
+    .content {
+      padding: 20px;
+      text-align: center;
+      background-color: #FAF3EB;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    
+    .content h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .content p {
+      color: #666;
+    }
+      .card {
+        width: calc(15% - 0px);
+        height: auto;
+        margin-top: 3%;
+        margin-bottom: 5%;
+      }
+      footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+  
+}
+
+footer p {
+    margin: auto;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442489331_2765279446994443_3726936669151171368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGqGjaH_zuey6AMKuLro1u1WfUwSjYdGFdZ9TBKNh0YV0a5LZOx-tDYhL_uRNQGid0rZG5Srocax7p7QeAJ8aFj&_nc_ohc=mYnyCA1fqqkQ7kNvgGPFW4H&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDYf_9Lxb86N8hZxYAL28f26V_oKOg_F7AJ6cb6Eq3UJA&oe=6653B4B5" alt="Logo">
+    <nav>
+      <a href="HomePage.html">Home</a>
+      <a href="Portfolio.html">Portfolio</a>
+      <a href="Contact.html">Contacts</a>
+      <a href="AboutUs.html">About Us</a>
+    </nav>
+    </header>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/444483066_2763731467149241_6697985361831938648_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG8I9ptcqWLvKpo9AaSh4QLMsUk3B6WsOIyxSTcHpaw4jydGH3QKXyw6Ejftxzenmt1hYyKuIygq9-u4CbQp1Nx&_nc_ohc=OWGLgFJvEEIQ7kNvgET5BSo&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBDHEehvMfvyLHDGq9_KkKmm3ExKvuDU5-PJngC2uCzDw&oe=665727D3" alt="Skincare">
+      </div>
+      <div class="content">
+        <h3>Charlotte Tilbury Charlotte's Magic Serum Crystal Elixir</h3>
+        <p>₱1,746.13</p>
+        <p><a href="Skincare.html">BUY NOW!</a></p>
+      </div>
+      
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441413754_2763731430482578_5044876587384897219_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF3Lqj2GkbhFVflN6Om1UN78tgAIqrNi7vy2AAiqs2LuwG2i12JeYbyVGZ8Z__uQ5ILZjs_c1t2d4ENC60KSZsz&_nc_ohc=1g2n4MuxpUwQ7kNvgEMar3V&_nc_ht=scontent-mnl1-2.xx&oh=00_AYAKTc_ligS9SqjAh0_0VeQ3ZAxRbb0gGrmx4PaVvRhf7g&oe=66570BFB" alt="Skincare">
+      </div>
+      <div class="content">
+        <h3>Charlotte Tilbury Super Radiance Resurfacing Facial</h3>
+        <p>₱4,074.32</p>
+        <p><a href="Skincare.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/444135790_2763732233815831_1777113284878813427_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEeXAa3PkMHiofAeLnhuNnmYecSNWqfh4Jh5xI1ap-Hgi3HpMsPIlEi_DvZ4vcXR4AYI3lWKGREAkDruSkD86pQ&_nc_ohc=sBkA9vOkgSUQ7kNvgGb1jhq&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDsoK6oiiySXpwvsrK831Ao2o44Tdylz1KEpOruKG5mow&oe=6657289D" alt="Skincare">
+      </div>
+      <div class="content">
+        <h3>Charlotte Tilbury Charlotte's Magic Hydrator Mist</h3>
+        <p>₱2,735.61</p>
+        <p><a href="Skincare.html">BUY NOW!</a></p>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442475330_2763731523815902_7622947967772820346_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF9VKV5QZ1DJM-BGCiTj7QVMnkZjAgs07kyeRmMCCzTubB6Re8Y98YAQYT3UmFiPmNeLr719MMyHN7WAjp64537&_nc_ohc=DMcSXxiyimIQ7kNvgG3WS2y&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDrAq_CBY4a6F16TOCm8aDU7GXfQiE_GYxNvSLbdMo5ww&oe=66570C91" alt="Skincare">
+      </div>
+      <div class="content">
+        <h3>Charlotte Tilbury Glow Toner</h3>
+        <p>₱1,105.89</p>
+        <p><a href="Skincare.html">BUY NOW!</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/443839515_2763731330482588_3664854214773775623_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG1JOJQ922krYtHVUI6onZRyZD0fAmAw__JkPR8CYDD__xUhEAgrB6r7WScMbKtgOmzPtCLYNcVkJCBGCyO_O7t&_nc_ohc=QFcg9zhwLYcQ7kNvgEM8_e7&_nc_ht=scontent-mnl1-2.xx&oh=00_AYA5W2H6AYrRNtGyS24h7FVWnZfutMEACeqfOTyGwpuX4g&oe=66571129" alt="Skincare">
+      </div>
+      <div class="content">
+        <h3>Charlotte Tilbury Charlotte's Magic Hydration Revival Cleanser</h3>
+        <p>₱1,746.13</p>
+        <p><a href="Skincare.html">BUY NOW!</a></p>
+      </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Beauty Bazaar. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Portfolio.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty Bazaar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900');
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    body {
+      min-height: 100vh;
+      background-image: url('https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441531507_2763731967149191_3027803288081130786_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEQ52URMcnBcZ-0ClRfObJGY_c25t3Ny8pj9zbm3c3LysLSpOFljhq1z1HrmHbz9YUNz7QPjsA0mfSFt3uV9Rav&_nc_ohc=J0ZYpjCa4u4Q7kNvgFNEgU2&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDUwEgDZV2CPUo2v-AN1k9oIrRZL-yzUOoEjvGGDUutqQ&oe=6653A5B6');
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      color: white;
+	  display: flex;
+      justify-content: flex-end;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      z-index: 1000;
+    }
+      header a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+    
+    }
+    header img {
+    width: 30px; 
+    height: auto; 
+    max-width: 30%; 
+    margin-right: auto; 
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      margin-top: 5px
+    }
+    
+    .card {
+      width: 50px;
+      height: 50px;
+      background: #FAF3EB;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+      margin: 20px;
+    }
+    
+    .card:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 25px 40px rgba(0, 0, 0, 0.3);
+    }
+    
+    .imgBx {
+      width: 100%;
+      height: 50%;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      overflow: hidden;
+    }
+    
+    .imgBx img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .content {
+      padding: 20px;
+      text-align: center;
+      background-color: #FAF3EB;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    
+    .content h3 {
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .content p {
+      color: #666;
+    }
+      .card {
+        width: calc(15% - 0px);
+        height: auto;
+      }
+      footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 12%;
+  
+}
+
+footer p {
+    margin: auto;
+}
+
+footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer nav ul li a:hover {
+    text-decoration: underline;
+}
+    }
+  </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442489331_2765279446994443_3726936669151171368_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGqGjaH_zuey6AMKuLro1u1WfUwSjYdGFdZ9TBKNh0YV0a5LZOx-tDYhL_uRNQGid0rZG5Srocax7p7QeAJ8aFj&_nc_ohc=mYnyCA1fqqkQ7kNvgGPFW4H&_nc_ht=scontent-mnl1-2.xx&oh=00_AYDYf_9Lxb86N8hZxYAL28f26V_oKOg_F7AJ6cb6Eq3UJA&oe=6653B4B5" alt="Logo">
+    <nav>
+        <a href="HomePage.html">Home</a>
+        <a href="Portfolio.html">Portfolio</a>
+        <a href="Contact.html">Contacts</a>
+        <a href="AboutUs.html">About Us</a>
+    </nav>
+    </header>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441528874_2765214423667612_8959869248774070561_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG09JpkLuPI_Ul1VwMDwqaSEyFH_vJza_ETIUf-8nNr8c4U2ViAdas9l_VFpSweGc41HNl-rLleOh3KD243ctmA&_nc_ohc=QukPFC9Xk90Q7kNvgFnAJ9J&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCctighPD5mgv8LFm1fTGvqo6JcpMyn7MctBRNFfLk8_A&oe=6653C522" alt="Make-up">
+      </div>
+      <div class="content">
+        <h3>Make-up</h3>
+        <p><a href="Make-up.html">See Products</a></p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/441544595_2765215020334219_6496063452492126152_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHf2RIeBVEUw8rsn1qU12ejEdu8YQ4QaUAR27xhDhBpQAXaRUYNEWiC--JPcX0DW6VoOadXPcNJzXFMcGVVGOb-&_nc_ohc=TaddrA0cZjsQ7kNvgGFn1hr&_nc_ht=scontent-mnl1-2.xx&oh=00_AYC-7hjoLMTs62xtyVJ4PtHn9fidsoSK21ZD6-0e5qcw-w&oe=6653B33D" alt="Skincare">
+      </div>
+      <div class="content">
+        <h3>Skincare</h3>
+        <p><a href="Skincare.html">See Products</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/444479569_2765214623667592_4279418794557578368_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGQjrq2PbZkBotarAgDu1YaeZUhgsyO17p5lSGCzI7XuiDjQd4qEH_tRskI9yzb2PDcADqzSS4My0q1la8eTa7P&_nc_ohc=ohy-yKWCg2gQ7kNvgFeWxS4&_nc_ht=scontent-mnl1-2.xx&oh=00_AYCExXMtLi7DcJBqSOy1dSFK_Sgb7iuE_rmrzpgpZG7W7Q&oe=6653D26D" alt="Shampoo">
+      </div>
+      <div class="content">
+        <h3>Shampoo</h3>
+        <p><a href="Shampoo.html">See Products</a></p>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="imgBx">
+        <img src="https://scontent-mnl1-2.xx.fbcdn.net/v/t39.30808-6/442477694_2765230176999370_992562547184129588_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGtWyQW7src2K8QZwQmsZYv4TsIbGIncerhOwhsYidx6sqG3OXY2dVHggX2QVbJIqdhbFYPggfzMPLVjqktZX5K&_nc_ohc=Wb2e_QSoDDsQ7kNvgGgDhjU&_nc_ht=scontent-mnl1-2.xx&oh=00_AYBzzJYbttq0dc0v_W2FYVUrcctGeHxhOd3L1L7BIP2X0A&oe=6653D279" alt="PersonalCare">
+      </div>
+      <div class="content">
+        <h3>Personal Care</h3>
+        <p><a href="PersonalCare.html">See Products</a></p>
+      </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 Beauty Bazaar. All rights reserved.</p>
+    <nav>
+        <ul>
+            <li><a href="HomePage.html">Home</a></li>
+            <li><a href="Portfolio.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+
+</html>
